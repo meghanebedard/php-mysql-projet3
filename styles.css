@@ -3,6 +3,10 @@ body {
     margin: auto;
 }
 
+.center {
+    text-align: center;
+}
+
 form > div {
     display: flex;
     flex-direction: row;
