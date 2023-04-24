@@ -6,7 +6,12 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h2>Veuillez créer un compte</h2>
+        <div class="center">
+            <?php
+            include "header.php";
+            ?>
+            <h2>Veuillez créer un compte</h2>
+        </div>
         <form method="post" action="register.php">
             <div class="champ">
                 <label>Nom complet : </label>
@@ -32,5 +37,8 @@
                 <input class="btn" type="submit" name="register" value="S'enregistrer" />
             </div>
         </form>
+        <?php
+        
+        ?>
     </body>
 </html> 
