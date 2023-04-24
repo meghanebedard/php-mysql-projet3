@@ -1,0 +1,30 @@
+body {
+    max-width: fit-content;
+    margin: auto;
+}
+
+form > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+label {
+    padding-right: 30px;
+}
+
+input {
+    border: black solid 2px;
+    border-radius: 5px;
+}
+
+.boutton {
+    justify-content: center;
+}
+
+input.btn {
+    padding: 5px 10px;
+    background-color: #0B7806;
+    color: white;
+}
