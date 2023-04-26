@@ -50,7 +50,7 @@
         if (count($resultat) === 0) {
             echo ("Les informations entrées<br>ne correspondent à aucun compte sauvegardé.");
         } else {
-            echo ("Bienvenue, $nom ");
+            echo ("Bienvenue, $nom.<br>Vous pouvez désormait passer à l'<a href='accueil.php'>accueil</a>.");
         }
 
     }
