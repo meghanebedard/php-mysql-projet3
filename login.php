@@ -14,7 +14,7 @@
         ?>
         <h2>Veuillez vous connecter</h2>
     </div>
-    <form method="post" action="register.php">
+    <form method="post" action="login.php">
         <div class="champ">
             <label>Username : </label>
             <input class="field" type="text" name="username" pattern="[A-Za-z0-9]{2,30}" required />
@@ -34,17 +34,25 @@
     </form>
     <?php
     include "connexion.php";
-    if (isset($_POST["register"])) {
+    if (isset($_POST["login"])) {
         $username = $_POST["username"];
         $motdepasse = $_POST["motdepasse"];
-/*
-        $registerAccount = $dbco->prepare(
-            "INSERT INTO utilisateurs (nomComplet, username, codePostal, email, motDePasse)
-            VALUES
-            ('$nom', '$username', '$codepostal', '$email', '$motdepasse')
+
+        $login = $dbco->prepare(
+            "SELECT username, motDePasse, nomComplet FROM utilisateurs
+            WHERE username = '$username' AND motDePasse = '$motdepasse'
             "
         );
-        $registerAccount->execute();*/
+        $login->execute();
+        $resultat = $login->fetchAll(PDO::FETCH_ASSOC);
+        $nom = $resultat[0]["nomComplet"];
+        
+        if (count($resultat) === 0) {
+            echo("Les informations entrées<br>ne correspondent à aucun compte sauvegardé.");
+        } else {
+            echo("Bienvenue, $nom ");
+        }
+
     }
     ?>
     <?php
