@@ -9,7 +9,6 @@ $dbname = "Colnet";
 try {
     $dbco = new PDO("mysql:host=$servername;dbname=$dbname;port=$port", $username, $password);
     $dbco -> setAttribute (PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "CONNEXION RÉUSSIE";
 } catch (PDOException $e) {
     echo "Erreur : " . $e -> getMessage();
 }
