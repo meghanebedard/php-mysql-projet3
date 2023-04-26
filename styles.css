@@ -23,12 +23,14 @@ input {
     border-radius: 5px;
 }
 
+
+
 .boutton {
     justify-content: center;
 }
 
 input.btn {
     padding: 5px 10px;
-    background-color: #0B7806;
+    background-color: red;/*#0B7806*/
     color: white;
 }

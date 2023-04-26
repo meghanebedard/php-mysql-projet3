@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
+    <body id="register">
         <div class="center">
             <?php
             include "header.php";
