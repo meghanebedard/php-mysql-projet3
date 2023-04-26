@@ -7,7 +7,7 @@ body {
     text-align: center;
 }
 
-form > div {
+form>div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -23,14 +23,23 @@ input {
     border-radius: 5px;
 }
 
+#login .boutton .champ {
+    max-width: fit-content;
+}
 
+#login .boutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
 
-.boutton {
+#register .boutton {
     justify-content: center;
 }
 
 input.btn {
     padding: 5px 10px;
-    background-color: red;/*#0B7806*/
+    background-color: #0B7806;
     color: white;
 }
