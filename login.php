@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Créer un compte</title>
+    <title>Connexion</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -21,7 +21,7 @@
         </div>
         <div class="champ">
             <label>Mot de passe : </label>
-            <input class="field" type="text" name="motdepasse" placeholder="**********" pattern="[A-Za-z0-9 !@#$%?&*()éèà^.,+=_-]{2,30}" required />
+            <input class="field" type="password" name="motdepasse" placeholder="**********" pattern="[A-Za-z0-9 !@#$%?&*()éèà^.,+=_-]{2,30}" required />
         </div>
         <div class="boutton">
             <div class="champ">

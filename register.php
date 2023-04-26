@@ -33,7 +33,7 @@
         </div>
         <div class="champ">
             <label>Mot de passe : </label>
-            <input class="field" type="text" name="motdepasse" placeholder="**********" pattern="[A-Za-z0-9 !@#$%?&*()éèà^.,+=_-]{2,30}" required />
+            <input class="field" type="password" name="motdepasse" placeholder="**********" pattern="[A-Za-z0-9 !@#$%?&*()éèà^.,+=_-]{2,30}" required />
         </div>
         <div class="champ boutton">
             <input class="btn" type="submit" name="register" value="S'enregistrer" />
