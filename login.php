@@ -46,11 +46,11 @@
         $login->execute();
         $resultat = $login->fetchAll(PDO::FETCH_ASSOC);
         $nom = $resultat[0]["nomComplet"];
-        
+
         if (count($resultat) === 0) {
-            echo("Les informations entrées<br>ne correspondent à aucun compte sauvegardé.");
+            echo ("Les informations entrées<br>ne correspondent à aucun compte sauvegardé.");
         } else {
-            echo("Bienvenue, $nom ");
+            echo ("Bienvenue, $nom ");
         }
 
     }
